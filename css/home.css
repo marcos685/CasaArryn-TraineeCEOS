@@ -9,10 +9,12 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 }
-@media screen and (min-width: 1080px){
-    body{
-        background-size: 100% 100%;
-    }
+
+header{
+    position: fixed;
+    width: 94%;
+    margin-left: 40px;
+    margin-top: -20px;
 }
 
 ul {
@@ -59,4 +61,10 @@ li a:hover:not(.active) {
 #mais-texto{
     text-align: center;
     position: relative;
+}
+
+@media screen and (min-width: 1080px){
+    body{
+        background-size: 100% 100%;
+    }
 }
