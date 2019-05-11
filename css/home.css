@@ -1,47 +1,54 @@
 html, body { /*Necessário pro background funcionar*/
     height: 100%;
     margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fontes do site, procurar outras depois*/
-    padding-right: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 #navbar ul{
-    height: 100px;
     position: fixed;
-    list-style-type: none;
+
     margin: 0;
-    padding: 0;
+    padding: 35px 10px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.7);
+
+    margin-left: 50px;
+
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    list-style-type: none;
     width: 90%;
     margin-left: 50px;
+    height: 75px;
+
 }
-  
+
 li {
     float: right;
 }
   
 li a {
-    display: block;
     color: black;
     text-align: center;
-    padding: 36px 24px;
+    padding: 0px 24px;
     text-decoration: none;
 }
-  
-li a:hover:not(.active) {
-    color: #cd2e3a;
+
+#navbar li a{
+    color: #2e5aea;
 }
-#active {
-    color: #00479b;
+#navbar li a:hover {
+    color: #cd2e3a;
 }
 
 .logo {
     float: left;
     font-family: 'Baloo Bhai', cursive;
-    font-size: 30px;
+    font-size: 40px;
+    vertical-align: middle;
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR-----------------*/
@@ -50,6 +57,9 @@ li a:hover:not(.active) {
     right: 10px;
     bottom: -37px;
     border-right: 2px solid;
+    margin-top: 40px;
+    padding-bottom: -20px;
+
 }
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
@@ -68,12 +78,15 @@ li a:hover:not(.active) {
 /*---------TEXTO SOBRE A IMAGEM DE FUNDO-----------*/ 
 #big-text{
     text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 3px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    /*font-size: 100pt;  AINDA NAO ACHEI UM TAMANHO DECENTE*/
+    font-size: 28px;
+    width: 80%
 }
 
 /*-----INICIO ESTILO RODAPÉ------*/
