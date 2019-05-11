@@ -2,9 +2,18 @@ html, body { /*Necessário pro background funcionar*/
     height: 100%;
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fontes do site, procurar outras depois*/
+    padding-right: -10px;
 }
 
 /*--------ESTILIZACAO DA NAVBAR----------*/
+
+#navbar ul{
+    height: 100px;
+    width: 90%;
+    margin-left: 50px;
+    position: fixed;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -34,9 +43,19 @@ li a:hover:not(.active) {
     color: #00479b;
 }
 
-#logo {
+.logo {
     float: left;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 30px;
 }
+
+/*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR-----------------*/
+#navbar .multi{
+    position: relative;
+    right: 10px;
+    bottom: -37px;
+}
+
 
 /*----------IMAGEM DE FUNDO----------*/
 .bg {
@@ -44,14 +63,8 @@ li a:hover:not(.active) {
     background-position: top center;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 90%;
     z-index: -1;
-}
-
-@media screen and (min-width: 1080px){
-    .bg{
-        background-size: 100% 100%;
-    }
 }
 
 /*---------TEXTO SOBRE A IMAGEM DE FUNDO-----------*/ 
@@ -69,4 +82,32 @@ li a:hover:not(.active) {
 #mais-texto{
     text-align: center;
     position: relative;
+}
+
+/*-----INICIO ESTILO RODAPÉ------*/
+footer{
+    position: absolute;
+    background-color: #5c6370;
+    width: 100%;
+    height: 140px;
+}
+
+footer .logo{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 30px;
+    margin-left: 34px;
+}
+
+/*---------------OBS.: AQUI FIZ UMA PEQUENA GAMBIARRA PRA POSICIONAR MAS TÁ DE BOA-------------------*/
+footer #copyright{
+    position: absolute;
+    top: 60px;
+    left: 34px;
+}
+/*------FIM ESTILO RODAPÉ------*/
+
+@media screen and (min-width: 1080px){
+    .bg{
+        background-size: 100% 100%;
+    }
 }
