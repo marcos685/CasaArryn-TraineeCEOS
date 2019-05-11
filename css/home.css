@@ -1,20 +1,10 @@
-html, body {
+html, body { /*Necessário pro background funcionar*/
     height: 100%;
     margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fontes do site, procurar outras depois*/
 }
-/*body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
-    background-position: top center;
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-@media screen and (min-width: 1080px){
-    body{
-        background-size: 100% 100%;
-    }
-}*/
 
+/*--------ESTILIZACAO DA NAVBAR----------*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -40,6 +30,15 @@ li a {
 li a:hover:not(.active) {
     color: #cd2e3a;
 }
+#active {
+    color: #00479b;
+}
+
+#logo {
+    float: left;
+}
+
+/*----------IMAGEM DE FUNDO----------*/
 .bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
     background-position: top center;
@@ -49,6 +48,13 @@ li a:hover:not(.active) {
     z-index: -1;
 }
 
+@media screen and (min-width: 1080px){
+    .bg{
+        background-size: 100% 100%;
+    }
+}
+
+/*---------TEXTO SOBRE A IMAGEM DE FUNDO-----------*/ 
 #big-text{
     text-align: center;
     position: absolute;
@@ -56,17 +62,10 @@ li a:hover:not(.active) {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 200pt;
+    /*font-size: 100pt;  AINDA NAO ACHEI UM TAMANHO DECENTE*/
 }
   
-#active {
-    color: #00479b;
-}
-
-#logo {
-    float: left;
-}
-
+/*------------TEXTO ABAIXO DA IMAGEM DE FUNDO----------*/
 #mais-texto{
     text-align: center;
     position: relative;
