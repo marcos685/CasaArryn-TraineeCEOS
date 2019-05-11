@@ -5,7 +5,7 @@ html, body { /*Necessário pro background funcionar*/
     padding-right: -10px;
 }
 
-/*--------ESTILIZACAO DA NAVBAR----------*/
+/*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 #navbar ul{
     height: 100px;
@@ -55,6 +55,8 @@ li a:hover:not(.active) {
     right: 10px;
     bottom: -37px;
 }
+
+/*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 
 /*----------IMAGEM DE FUNDO----------*/
