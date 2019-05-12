@@ -19,6 +19,7 @@ html, body { /*Necessário pro background funcionar*/
     transition: 0.4s;
     width: 80%;
     margin-left: 80px;
+
 }
 
 li {
@@ -48,9 +49,9 @@ li a {
     transition: 0.4s;
 }
 
-/*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR-----------------*/
+/*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
 .multi{
-    padding: 10px 30px 0px -0px;
+    padding: 10px 30px 0px 0px;
 }
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
