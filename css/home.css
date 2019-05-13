@@ -23,9 +23,8 @@ html, body { /*Necessário pro background funcionar*/
 }
 
 .multi li {
-    display: block;
     float: right;
-    padding: 10px 20px 0px 20px;
+    padding: 25px 10px 0px 20px;
 }
   
  #navbar a {
@@ -45,7 +44,7 @@ html, body { /*Necessário pro background funcionar*/
 #logo {
     float: left;
     font-family: 'Baloo Bhai', cursive;
-    font-size: 28px;
+    font-size: 40px;
     padding-left: 40px;
     transition: 0.4s;
 }
@@ -53,21 +52,17 @@ html, body { /*Necessário pro background funcionar*/
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
 .multi{
     padding-right: 40px;
-<<<<<<< HEAD
 }
 
 .navb .icon{
     display: none;
 }
 
-=======
-}
-
 .navb .icon{
     display: none;
 }
 
->>>>>>> teste
+
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
@@ -93,7 +88,9 @@ html, body { /*Necessário pro background funcionar*/
     transform: translate(-50%, -50%);
     color: white;
     font-size: 28px;
-    width: 80%
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 /*-----INICIO ESTILO RODAPÉ------*/
@@ -109,6 +106,7 @@ footer .logo{
     font-family: 'Baloo Bhai', cursive;
     font-size: 30px;
     margin-left: 34px;
+    padding-top: 30px;
 }
 
 /*---------------OBS.: AQUI FIZ UMA PEQUENA GAMBIARRA PRA POSICIONAR MAS TÁ DE BOA-------------------*/
@@ -131,6 +129,8 @@ footer #copyright{
 #servicos_oferecidos h1{
     text-align: center;
     font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 
 }
 #servicos_oferecidos ul li{
@@ -141,11 +141,12 @@ footer #copyright{
     width: 220px;
     margin-left: 60px;
     border-radius: 5px 20px;
-    border: 2px solid;
+    padding: 10px 10px;
+    box-shadow: inset 0 0 40px #becbe0;
 }
 #servicos_oferecidos ul{
     position: relative;
-    right: 250px;
+    right: 230px;
     padding-top: 40px;
     list-style-type: none;
 }
