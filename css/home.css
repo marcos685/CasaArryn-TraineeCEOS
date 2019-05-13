@@ -23,9 +23,8 @@ html, body { /*Necessário pro background funcionar*/
 }
 
 .multi li {
-    display: block;
     float: right;
-    padding: 10px 20px 0px 20px;
+    padding: 25px 10px 0px 20px;
 }
   
  #navbar a {
@@ -45,7 +44,7 @@ html, body { /*Necessário pro background funcionar*/
 #logo {
     float: left;
     font-family: 'Baloo Bhai', cursive;
-    font-size: 28px;
+    font-size: 40px;
     padding-left: 40px;
     transition: 0.4s;
 }
@@ -59,6 +58,11 @@ html, body { /*Necessário pro background funcionar*/
     display: none;
 }
 
+.navb .icon{
+    display: none;
+}
+
+
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
@@ -67,7 +71,7 @@ html, body { /*Necessário pro background funcionar*/
 .bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
     background-position: top center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     z-index: -1;
@@ -84,7 +88,9 @@ html, body { /*Necessário pro background funcionar*/
     transform: translate(-50%, -50%);
     color: white;
     font-size: 28px;
-    width: 80%
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 /*-----INICIO ESTILO RODAPÉ------*/
@@ -100,6 +106,7 @@ footer .logo{
     font-family: 'Baloo Bhai', cursive;
     font-size: 30px;
     margin-left: 34px;
+    padding-top: 30px;
 }
 
 /*---------------OBS.: AQUI FIZ UMA PEQUENA GAMBIARRA PRA POSICIONAR MAS TÁ DE BOA-------------------*/
@@ -117,31 +124,35 @@ footer #copyright{
     margin-top: 50px;
     height: 400px;
     display: block;
+    margin-right: 50px;
 }
 #servicos_oferecidos h1{
     text-align: center;
     font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 
+}
+#servicos_oferecidos ul li{
+    float: right;
 }
 #servicos_oferecidos img{
     height: 185px;
     width: 220px;
     margin-left: 60px;
     border-radius: 5px 20px;
+    padding: 10px 10px;
+    box-shadow: inset 0 0 40px #becbe0;
 }
 #servicos_oferecidos ul{
     position: relative;
-    right: 250px;
+    right: 230px;
     padding-top: 40px;
     list-style-type: none;
 }
-#servicos_oferecidos img{
-    border: 2px solid;
-}
 #servicos_oferecidos figcaption{
     text-align: center;
-    padding-left: 40px;
-
+    margin-left: 50px;
 }
 
 
