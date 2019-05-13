@@ -10,27 +10,29 @@ html, body { /*Necessário pro background funcionar*/
 #navbar{
     position: fixed;
     margin: 0;
-    padding: 35px 50px;
+    padding: 30px 0px;
     overflow: hidden;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
     list-style-type: none;
     transition: 0.4s;
-    width: 80%;
-    margin-left: 80px;
+    width: 100%;
+    /*margin-left: 80px;*/
 
 }
 
-li {
+.multi li {
     display: block;
     float: right;
+    padding: 10px 20px 0px 20px;
 }
   
-li a {
+ #navbar a {
     color: black;
     text-align: center;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 #active{
@@ -44,15 +46,19 @@ li a {
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 28px;
-    vertical-align: middle;
-    padding-left: 25px;
+    padding-left: 40px;
     transition: 0.4s;
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
 .multi{
-    padding: 10px 30px 0px 0px;
+    padding-right: 40px;
 }
+
+.navb .icon{
+    display: none;
+}
+
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
@@ -144,8 +150,20 @@ footer #copyright{
 
 /*-----FIM ESTILO BODY-----*/
 
-@media screen and (min-width: 1080px){
+@media screen and (max-width: 1080px){
     .bg{
         background-size: 100% 100%;
+    }
+
+    .navb .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navb.mobnav  .multi {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
