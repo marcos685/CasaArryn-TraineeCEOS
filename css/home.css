@@ -151,19 +151,27 @@ footer #copyright{
 /*-----FIM ESTILO BODY-----*/
 
 @media screen and (max-width: 1080px){
-    .bg{
-        background-size: 100% 100%;
-    }
 
-    .navb .icon {
+    /*.navb .icon {
         display: block;
         position: absolute;
         right: 0;
         top: 0;
+    }*/
+    .navb .multi li{
+        display: none;
     }
-    .navb.mobnav  .multi {
-        float: none;
+
+    .navb #logo {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        
+    }
+
+    .navb.mobnav .multi li{
         display: block;
-        text-align: left;
+        float: none;
     }
+
 }
