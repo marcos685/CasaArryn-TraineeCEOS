@@ -96,6 +96,8 @@ html, body { /*Necessário pro background funcionar*/
 /*-----INICIO ESTILO RODAPÉ------*/
 footer{
     position: relative;
+    bottom: -20px;
+    right: 0;
     background-color: #5c6370;
     width: 100%;
     height: 140px;
@@ -124,7 +126,9 @@ footer #copyright{
     margin-top: 50px;
     height: 400px;
     display: block;
-    margin-right: 50px;
+    margin-right: 80px;
+    margin-left: 90px;
+    border-bottom: 2px solid;
 }
 #servicos_oferecidos h1{
     text-align: center;
@@ -146,16 +150,49 @@ footer #copyright{
 }
 #servicos_oferecidos ul{
     position: relative;
-    right: 230px;
+    right: 140px;
     padding-top: 40px;
     list-style-type: none;
 }
 #servicos_oferecidos figcaption{
     text-align: center;
     margin-left: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 
 
+/*------------PARTE INSCREVER---------------*/
+.inscricao{
+    height: 600px;
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+
+.inscricao button{
+    box-shadow: 0 0 20px black;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 80px;
+    clear: left;
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+
+}
+
+.inscricao p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    clear: left;
+}
+
+.inscricao .twitter-timeline{
+    float: right;
+    margin-right: 270px;
+
+}
 
 
 
