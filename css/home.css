@@ -53,12 +53,21 @@ html, body { /*Necessário pro background funcionar*/
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
 .multi{
     padding-right: 40px;
+<<<<<<< HEAD
 }
 
 .navb .icon{
     display: none;
 }
 
+=======
+}
+
+.navb .icon{
+    display: none;
+}
+
+>>>>>>> teste
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
@@ -67,7 +76,7 @@ html, body { /*Necessário pro background funcionar*/
 .bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
     background-position: top center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     z-index: -1;
@@ -117,17 +126,22 @@ footer #copyright{
     margin-top: 50px;
     height: 400px;
     display: block;
+    margin-right: 50px;
 }
 #servicos_oferecidos h1{
     text-align: center;
     font-size: 40px;
 
 }
+#servicos_oferecidos ul li{
+    float: right;
+}
 #servicos_oferecidos img{
     height: 185px;
     width: 220px;
     margin-left: 60px;
     border-radius: 5px 20px;
+    border: 2px solid;
 }
 #servicos_oferecidos ul{
     position: relative;
@@ -135,13 +149,9 @@ footer #copyright{
     padding-top: 40px;
     list-style-type: none;
 }
-#servicos_oferecidos img{
-    border: 2px solid;
-}
 #servicos_oferecidos figcaption{
     text-align: center;
-    padding-left: 40px;
-
+    margin-left: 50px;
 }
 
 
