@@ -127,6 +127,16 @@ footer #copyright{
     top: 60px;
     padding-left: 34px;
 }
+
+footer .icon{
+    height: 25px;
+    width: 25px;
+    float: right;
+    padding-right: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
 /*------FIM ESTILO RODAPÉ------*/
 
 
@@ -160,7 +170,7 @@ footer #copyright{
 }
 #servicos_oferecidos ul{
     position: relative;
-    right: 140px;
+    right: 180px;
     padding-top: 40px;
     list-style-type: none;
 }
@@ -190,14 +200,13 @@ footer #copyright{
     height: 45px;
     width: 200px;
     font-size: 20px;
-
 }
 
 .inscricao p{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 28px;
-}
+}     
 
 .api-twitter{
     position: relative;
