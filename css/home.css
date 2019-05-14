@@ -5,6 +5,15 @@ html, body { /*Necessário pro background funcionar*/
 
 }
 
+#container{
+    min-height: 100%;
+    position: relative;
+}
+#content{
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
 /*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 #navbar{
@@ -34,10 +43,10 @@ html, body { /*Necessário pro background funcionar*/
     vertical-align: middle;
 }
 
-#active{
+.multi #active{
     color: #2e5aea;
 }
-.multi a:hover {
+#navbar a:hover:not(#active) {
     color: #cd2e3a;
 }
 
@@ -68,13 +77,17 @@ html, body { /*Necessário pro background funcionar*/
 
 
 /*----------IMAGEM DE FUNDO----------*/
-.bg {
+#bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------TEXTO SOBRE A IMAGEM DE FUNDO-----------*/ 
@@ -83,20 +96,17 @@ html, body { /*Necessário pro background funcionar*/
     word-spacing: 10px;
     letter-spacing: 3px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 28px;
     width: 80%;
     font-family: 'Quicksand', sans-serif;
-
+    vertical-align: center;
 }
 
 /*-----INICIO ESTILO RODAPÉ------*/
 footer{
-    position: relative;
-    bottom: -20px;
+    position: absolute;
+    bottom: 0%;
     right: 0;
     background-color: #5c6370;
     width: 100%;
@@ -108,14 +118,14 @@ footer .logo{
     font-family: 'Baloo Bhai', cursive;
     font-size: 30px;
     margin-left: 34px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 /*---------------OBS.: AQUI FIZ UMA PEQUENA GAMBIARRA PRA POSICIONAR MAS TÁ DE BOA-------------------*/
 footer #copyright{
     position: absolute;
     top: 60px;
-    left: 34px;
+    padding-left: 34px;
 }
 /*------FIM ESTILO RODAPÉ------*/
 
@@ -192,9 +202,8 @@ footer #copyright{
 .api-twitter{
     position: relative;
     top: 90px;
-    left: 50px;
-    height: 400px;
-
+   padding-left: 50px;
+    
 }
 
 
