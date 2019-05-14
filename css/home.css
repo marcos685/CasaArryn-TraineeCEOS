@@ -164,17 +164,19 @@ footer #copyright{
 
 /*------------PARTE INSCREVER---------------*/
 .inscricao{
-    height: 600px;
+    clear: left;
+    height: 400px;
+    width: 600px;
     position: relative;
     top: 70px;
-    left: 100px;
+    left: 150px;
+    float: left;
 }
 
 .inscricao button{
     box-shadow: 0 0 20px black;
     font-family: 'Quicksand', sans-serif;
     margin-left: 80px;
-    clear: left;
     height: 45px;
     width: 200px;
     font-size: 20px;
@@ -185,12 +187,13 @@ footer #copyright{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 28px;
-    clear: left;
 }
 
-.inscricao .twitter-timeline{
-    float: right;
-    margin-right: 270px;
+.api-twitter{
+    position: relative;
+    top: 90px;
+    left: 50px;
+    height: 400px;
 
 }
 
