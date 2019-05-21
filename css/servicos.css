@@ -165,24 +165,38 @@ footer .icon{
 
 .servicos img{
     height: auto;
-    width: 200px;
+    width: 130px;
     padding-top:40px;
     padding-bottom:15px;
 }
 
+
 .servicos{
     margin:5px;
-    border: 2px solid #00BFFF;
+    border: 3px solid #00BFFF;
     border-radius: 40px;
     padding:15px;
     padding-bottom:30px;
     width:25%;
     height:450px;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+}
+
+.servicos:hover{
+    opacity: 1;
+    background-color: rgba(86, 204, 255, 0.3);
+}
 }
 .texto{
     font-family: 'Montserrat', sans-serif;
     width:100%;
     margin-top:15px;
     padding:0;
+}
+.nome{
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    font-weight:bold;
 }
 /*-----FIM BODY--------*/
