@@ -1,4 +1,4 @@
-html, body {
+html, body { /*Necessário pro background funcionar*/
     height: 100%;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,15 +7,24 @@ html, body {
 
 /*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
-#navbar{
+.navb{
     position: fixed;
-    top: -17px;
+    margin: 0;
     padding: 30px 0px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
     list-style-type: none;
     transition: 0.4s;
+    width: 100%;
+}
+
+.stickynav {
+    padding: 0;
+}
+
+.topbar {
+    display: block;
     width: 100%;
 }
 
@@ -23,32 +32,47 @@ html, body {
     display: flex;
     float: right;
     flex-flow: row wrap;
+    font-family: 'Quicksand', sans-serif;
 }
 .multi li {
-    
-    padding: 25px 10px 0px 20px;
+    padding: 25px 10px 20px 20px;
 }
   
- #navbar a {
+.navb a {
     color: black;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
+
 }
 
 .multi #active{
     color: #2e5aea;
 }
-#navbar a:hover:not(#active) {
+.multi a:hover:not(#active) {
     color: #cd2e3a;
+    font-weight:bold;
 }
 
-#logo {
+.lg {
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
     padding-left: 40px;
     transition: 0.4s;
+}
+#logo{
+    width:250px;
+    height:auto;
+    margin-top:5px;
+    margin-left:1%;
+    padding-bottom:0;
+    float:left;
+    
+}
+
+.stickylogo {
+    font-size: 22px;
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
@@ -60,16 +84,40 @@ html, body {
     display: none;
 }
 
-.navb .icon{
-    display: none;
-}
-
-
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
+
+/*----------IMAGEM DE FUNDO----------*/
+#bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------TEXTO SOBRE A IMAGEM DE FUNDO-----------*/ 
+#big-text{
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+    vertical-align: center;
+}
+
 /*-----INICIO ESTILO RODAPÉ------*/
 footer{
+    position: static;
     background-color: #5c6370;
     width: 100%;
     height: 140px;
@@ -102,19 +150,39 @@ footer .icon{
 
 /*------ESTILO BODY-----------*/
 
-#servicos{
+#container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     width: 80%;
-    margin: 0 auto;
-    margin-left: 16%;
+    padding-top:15%;
+
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+    
 }
 
 .servicos img{
-    height: 20%;
-    width: 20%;
+    height: auto;
+    width: 200px;
+    padding-top:40px;
+    padding-bottom:15px;
 }
 
 .servicos{
-    display: inline;
-    margin-left: 5%;
+    margin:5px;
+    border: 2px solid #00BFFF;
+    border-radius: 40px;
+    padding:15px;
+    padding-bottom:30px;
+    width:25%;
+    height:450px;
+}
+.texto{
+    font-family: 'Montserrat', sans-serif;
+    width:100%;
+    margin-top:15px;
+    padding:0;
 }
 /*-----FIM BODY--------*/

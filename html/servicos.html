@@ -7,44 +7,49 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/servicos.css">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <script src="../js/home.js"></script>
 	</head>
 
 
 	<body>
-		<nav>
+        <nav>
             <ul id="navbar" class="navb">
-                <li id="logo"><a href="home.html">Hangulator</a></li>
-                <li><a href="javascript:void(0)" class="icon" onclick="mobileNavbar()">I</a></li>
+                <li class="lg" id="logo">                    
+                    <a href="javascript:void(0)"  onclick="mobileNavbar()">
+                        <img class="icon" src="../img/menu_icon.svg" alt="Menu" />
+                    </a>
+                    <a href="home.html"><img src="../css/logo.png" id="logo"></a>
+                </li>
                 <div class="multi">
-                    <li><a href="home.html" id="active" >Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="servicos.html"  id="active" >Serviços</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </div>
             </ul>
         </nav>
 
-        <section id="servicos">
+        <section id="container">
 
         	<div class="servicos">
         		<img src="../css/presencial_icon.png">
-        		<!--<p>A melhor experiência de aprendizado ainda é aprender junto! Estar em contato, praticar a fala e vivenciar melhor o idioma são as vantagens do ensino presencial.
-	Entre em contato para saber os horários e turmas disponíveis!</p>-->
+        		<p class="texto">A melhor experiência de aprendizado ainda é aprender junto! Estar em contato, praticar a fala e vivenciar melhor o idioma são as vantagens do ensino presencial.
+	Entre em contato para saber os horários e turmas disponíveis!</p>
         	</div>
 
         	<div class="servicos">
         		<img src="../css/distancia_icon.png">
-        		<!--<p>Não tem como se deslocar diariamente para uma de nossas sedes par aulas presenciais? 
+        		<p class="texto">Não tem como se deslocar diariamente para uma de nossas sedes par aulas presenciais? 
 	Sem problemas! Nossa biblioteca de aulas virtuais conta com os mesmos professores, mesma leveza e mesma dinâmica da sala de aula.
-	Não deixe isso atrapalhar seu aprendizado!</p>-->
+	Não deixe isso atrapalhar seu aprendizado!</p>
         	</div>
 
         	<div class="servicos">
         		<img src="../css/intercambio_icon.svg">
-        		<!--<p>Nós contamos com parcerias com universidades coreanas, como a Universidade de Seul, para intercâmbios culturais de 6 ou 10 meses, para você conhecer a Coréia e aprimorar seu idioma.
+        		<p class="texto">Nós contamos com parcerias com universidades coreanas, como a Universidade de Seul, para intercâmbios culturais de 6 ou 10 meses, para você conhecer a Coréia e aprimorar seu idioma.
 	Entre em contato conosco para saber sobre os preços e vantagens de viajar com a gente!</p>
-        	</div>-->
+        	</div>
 
         </section>
 
