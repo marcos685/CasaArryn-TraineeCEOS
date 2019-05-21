@@ -1,10 +1,12 @@
 html, body { /*Necessário pro background funcionar*/
-    /*height: 100%;
-    margin: 0px;*/
+    height: 100%;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*-------COMEÇO ESTILO CABEÇALHO--------*/
+
+/*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
+
 .navb{
     position: fixed;
     margin: 0;
@@ -73,6 +75,7 @@ html, body { /*Necessário pro background funcionar*/
     float:left;
     
 }
+
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
 .multi{
     padding-right: 40px;
@@ -82,10 +85,8 @@ html, body { /*Necessário pro background funcionar*/
     display: none;
 }
 
-.navb .icon{
-    display: none;
-}
-/*-------FIM ESTILO CABEÇALHO--------*/
+
+/*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 /*-------COMEÇO ESTILO RODAPÉ---------*/
 footer{
@@ -123,13 +124,14 @@ footer .icon{
 /*-------FIM ESTILO RODAPÉ------------*/
 
 
+
 /*-------ESTILO BODY--------*/
 .sobre{
     width: 80%;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: 120px;
+    padding-top:10%;
 }
 
 
