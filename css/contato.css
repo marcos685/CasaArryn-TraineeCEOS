@@ -169,4 +169,11 @@ input[type=submit]:hover {
     font-family: 'Montserrat', sans-serif;
     text-align:center;
 }
+#texto{
+    width:40%;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:30%;
+    margin-bottom:2%;
+}
 /*------FIM ESTILO BODY-------*/
