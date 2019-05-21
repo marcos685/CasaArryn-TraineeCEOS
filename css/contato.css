@@ -134,7 +134,9 @@ footer .icon{
     border: 2px solid #00BFFF;
     width:40%;
     margin: 0 auto;
-    padding: 15px;
+    padding-left: 3%;
+    padding-top:15px;
+    padding-bottom:15px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -176,5 +178,11 @@ input[type=submit]:hover {
     margin-left:30%;
     margin-bottom:2%;
 }
-
+#daebak{
+    margin-right:13%;
+    padding:0;
+    float:right;
+    width:190px;
+    height:auto;
+}
 /*------FIM ESTILO BODY-------*/
