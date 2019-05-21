@@ -1,14 +1,21 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (window.pageYOffset > 80) {
-        document.getElementById("navbar").style.padding = "0px 0px";
-        document.getElementById("logo").style.fontSize = "22px";
-    } else {
-        document.getElementById("navbar").style.padding = "30px 0px";
-        document.getElementById("logo").style.fontSize = "40px";
+  var nav = document.getElementById("navbar");
+  var logo = document.getElementById("logo");
+  var mediaQuery = window.matchMedia('(max-width: 1080px)')
 
+  if (!mediaQuery.matches){
+    if (window.pageYOffset > 80) {
+      if(nav.className === "navb") {
+        nav.className += " stickynav";
+        logo.className += " stickylogo";
+      }
+    } else {
+        nav.className = "navb";
+        logo.className = "lg";
     }
+  }
 }
 
 function mobileNavbar() {

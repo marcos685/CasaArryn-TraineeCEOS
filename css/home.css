@@ -16,7 +16,7 @@ html, body { /*Necessário pro background funcionar*/
 
 /*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
-#navbar{
+.navb{
     position: fixed;
     margin: 0;
     padding: 30px 0px;
@@ -28,36 +28,50 @@ html, body { /*Necessário pro background funcionar*/
     width: 100%;
 }
 
+.stickynav {
+    padding: 0;
+}
+
+.topbar {
+    display: block;
+    width: 100%;
+}
+
 .multi {
     display: flex;
     float: right;
     flex-flow: row wrap;
+    font-family: 'Quicksand', sans-serif;
 }
 .multi li {
-    
     padding: 25px 10px 0px 20px;
 }
   
- #navbar a {
+.navb a {
     color: black;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
+
 }
 
 .multi #active{
     color: #2e5aea;
 }
-#navbar a:hover:not(#active) {
+.multi a:hover:not(#active) {
     color: #cd2e3a;
 }
 
-#logo {
+.lg {
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
     padding-left: 40px;
     transition: 0.4s;
+}
+
+.stickylogo {
+    font-size: 22px;
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
@@ -68,11 +82,6 @@ html, body { /*Necessário pro background funcionar*/
 .navb .icon{
     display: none;
 }
-
-.navb .icon{
-    display: none;
-}
-
 
 
 /*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
@@ -220,22 +229,26 @@ footer .icon{
 /*-----FIM ESTILO BODY-----*/
 
 @media screen and (max-width: 1080px){
-
-    /*.navb .icon {
-        display: block;
+    .navb .icon{
         position: absolute;
-        right: 0;
-        top: 0;
-    }*/
+        display: block;
+        float: left;
+        width: 32px;
+        height: 32px;
+        padding: 16px;
+    }
+    .navb {
+        position: absolute;
+        background-color: white;
+    }
     .navb .multi {
         display: none;
     }
 
-    .navb #logo {
-        width: 100%;
+    .navb .lg{
         padding: 0px;
         text-align: center;
-        
+        width: 100%;
     }
 
     .navb.mobnav .multi{
