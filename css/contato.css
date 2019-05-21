@@ -104,6 +104,7 @@ footer .icon{
     text-align: center;
     position: relative;
     top: 120px;
+    
 }
 #formulario{
     border: 2px solid #00BFFF;
@@ -111,12 +112,15 @@ footer .icon{
     margin: 0 auto;
     padding: 15px;
     border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 #mensagem{
     height:300px;
     width:90%;
     padding: 10px;
     margin-bottom: 5px;
+    margin-top:5px;
     resize:none;
     border-radius: 5px;
 }
@@ -139,6 +143,7 @@ input[type=submit]:hover {
 
 #contato h1{
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
