@@ -5,41 +5,54 @@ html, body { /*Necessário pro background funcionar*/
 }
 
 /*-------COMEÇO ESTILO CABEÇALHO--------*/
-#navbar{
+.navb{
     position: fixed;
     margin: 0;
-    padding: 0px 0px;
+    padding: 30px 0px;
     overflow: hidden;
-    position: fixed;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
     list-style-type: none;
     transition: 0.4s;
     width: 100%;
-    /*margin-left: 80px;*/
-
 }
 
-.multi li {
+.stickynav {
+    padding: 0;
+}
+
+.topbar {
+    display: block;
+    width: 100%;
+}
+
+.multi {
+    display: flex;
     float: right;
-    padding: 25px 10px 0px 20px;
+    flex-flow: row wrap;
+    font-family: 'Quicksand', sans-serif;
+}
+.multi li {
+    padding: 25px 10px 20px 20px;
 }
   
- #navbar a {
+.navb a {
     color: black;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
+
 }
 
-#active{
+.multi #active{
     color: #2e5aea;
 }
-.multi a:hover {
+.multi a:hover:not(#active) {
     color: #cd2e3a;
+    font-weight:bold;
 }
 
-#logo {
+.lg {
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
@@ -47,6 +60,19 @@ html, body { /*Necessário pro background funcionar*/
     transition: 0.4s;
 }
 
+.stickylogo {
+    font-size: 22px;
+}
+
+#logo{
+    width:250px;
+    height:auto;
+    margin-top:5px;
+    margin-left:1%;
+    padding-bottom:0;
+    float:left;
+    
+}
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
 .multi{
     padding-right: 40px;

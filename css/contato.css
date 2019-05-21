@@ -4,47 +4,76 @@ html, body { /*Necessário pro background funcionar*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*-------COMEÇO ESTILO CABEÇALHO--------*/
-#navbar{
+
+/*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
+
+.navb{
     position: fixed;
     margin: 0;
-    padding: 0px 0px;
+    padding: 30px 0px;
     overflow: hidden;
-    position: fixed;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
     list-style-type: none;
     transition: 0.4s;
     width: 100%;
-    /*margin-left: 80px;*/
-
 }
 
-.multi li {
+.stickynav {
+    padding: 0;
+}
+
+.topbar {
+    display: block;
+    width: 100%;
+}
+
+.multi {
+    display: flex;
     float: right;
-    padding: 25px 10px 0px 20px;
+    flex-flow: row wrap;
+    font-family: 'Quicksand', sans-serif;
+}
+.multi li {
+    padding: 25px 10px 20px 20px;
 }
   
- #navbar a {
+.navb a {
     color: black;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
+
 }
 
-#active{
+.multi #active{
     color: #2e5aea;
 }
-.multi a:hover {
+.multi a:hover:not(#active) {
     color: #cd2e3a;
+    font-weight:bold;
 }
 
-#logo {
+.lg {
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
     padding-left: 40px;
     transition: 0.4s;
+}
+
+.stickylogo {
+    font-size: 22px;
+}
+
+#logo{
+    width:250px;
+    height:auto;
+    margin-top:5px;
+    margin-left:1%;
+    padding-bottom:0;
+    float:left;
+    
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
@@ -56,10 +85,8 @@ html, body { /*Necessário pro background funcionar*/
     display: none;
 }
 
-.navb .icon{
-    display: none;
-}
-/*-------FIM ESTILO CABEÇALHO--------*/
+
+/*--------FIM ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 /*-------COMEÇO ESTILO RODAPÉ---------*/
 footer{
@@ -99,16 +126,13 @@ footer .icon{
 
 /*-------ESTILO BODY--------*/
 #contato{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 120px;
-    
+    width: 100%;
+    text-align: left;
+    padding-top:13%;
 }
 #formulario{
     border: 2px solid #00BFFF;
-    width:100%;
+    width:40%;
     margin: 0 auto;
     padding: 15px;
     border-radius: 20px;
@@ -131,20 +155,18 @@ footer .icon{
 }
 
 input[type=submit] {
-  background-color: #00BFFF;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+    background-color: #00BFFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left:78%;
 }
 input[type=submit]:hover {
   background-color: #1E90FF;
 }
-
-#contato h1{
-    text-align: left;
+#titulo{
     font-family: 'Montserrat', sans-serif;
-
+    text-align:center;
 }
-
 /*------FIM ESTILO BODY-------*/

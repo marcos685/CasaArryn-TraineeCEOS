@@ -11,20 +11,24 @@
 </head>
 <body>
     
-    <nav>
-        <ul id="navbar" class="navb">
-            <li id="logo"><a href="home.html">Hangulator</a></li>
-            <div class="multi">
-                <li><a href="javascript:void(0)" class="icon" onclick="mobileNavbar()">I</a></li>
-                <li><a href="contato.html" id="active">Contato</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="home.html" >Home</a></li>
-            </div>
-        </ul>
-    </nav>
+        <nav>
+            <ul id="navbar" class="navb">
+                <li class="lg" id="logo">                    
+                    <a href="javascript:void(0)"  onclick="mobileNavbar()">
+                        <img class="icon" src="../img/menu_icon.svg" alt="Menu" />
+                    </a>
+                    <a href="home.html"><img src="../css/logo.png" id="logo"></a>
+                </li>
+                <div class="multi">
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" id="active">Contato</a></li>
+                </div>
+            </ul>
+        </nav>
 
-    <section id="contato">
+    <div id="contato">
         <h1 id="titulo">Fale conosco!</h1>
         <form id="formulario">
             <label class="lbl" for="nome">Nome:</label><br>
@@ -42,7 +46,7 @@
             <input type="submit" value="Enviar">
         </form>
 
-    </section>
+    </div>
 
     
 
@@ -55,4 +59,5 @@
     </footer>
 
 </body>
+
 </html>
