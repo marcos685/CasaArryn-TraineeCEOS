@@ -127,11 +127,20 @@ footer .icon{
 
 /*-------ESTILO BODY--------*/
 .sobre{
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     position: relative;
     padding-top:10%;
+    padding-right:10%;
+    font-family: 'Montserrat', sans-serif;
+}
+#annyeong{
+    float:right;
+    width:100px;
+    height:auto;
+    margin:0;
+    padding-top:50px;
 }
 
 
