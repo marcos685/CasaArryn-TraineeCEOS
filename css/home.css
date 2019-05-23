@@ -5,15 +5,6 @@ html, body { /*Necessário pro background funcionar*/
 
 }
 
-#container{
-    min-height: 100%;
-    position: relative;
-}
-#content{
-    padding-bottom: 200px;
-    overflow: hidden;
-}
-
 /*--------INICIO ESTILIZACAO DA NAVBAR OU HEADER----------*/
 
 .navb{
@@ -67,7 +58,6 @@ html, body { /*Necessário pro background funcionar*/
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
-    padding-left: 40px;
     transition: 0.4s;
 }
 #logo{
@@ -77,11 +67,13 @@ html, body { /*Necessário pro background funcionar*/
     margin-left:1%;
     padding-bottom:0;
     float:left;
-    
+    padding-left: 40px;
 }
-
-.stickylogo {
-    font-size: 22px;
+#logo img{
+    margin-top:7px;
+    width:250px;
+    height:auto;
+    
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
@@ -267,8 +259,13 @@ footer .icon{
 
     .navb .lg{
         padding: 0px;
-        text-align: center;
         width: 100%;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+        float: none;
     }
 
     .navb.mobnav .multi{

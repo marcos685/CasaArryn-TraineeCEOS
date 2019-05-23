@@ -12,7 +12,7 @@ html, body { /*Necessário pro background funcionar*/
     margin: 0;
     padding: 30px 0px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
     list-style-type: none;
     transition: 0.4s;
@@ -58,14 +58,8 @@ html, body { /*Necessário pro background funcionar*/
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
-    padding-left: 40px;
     transition: 0.4s;
 }
-
-.stickylogo {
-    font-size: 22px;
-}
-
 #logo{
     width:250px;
     height:auto;
@@ -73,6 +67,12 @@ html, body { /*Necessário pro background funcionar*/
     margin-left:1%;
     padding-bottom:0;
     float:left;
+    padding-left: 40px;
+}
+#logo img{
+    margin-top:7px;
+    width:250px;
+    height:auto;
     
 }
 
@@ -147,4 +147,48 @@ footer .icon{
 
 /*------FIM ESTILO BODY-------*/
 
+@media screen and (max-width: 1080px){
+
+/*----------------NAVBAR MOBILE----------------*/    
+    .navb .icon{
+        position: absolute;
+        display: block;
+        float: left;
+        width: 32px;
+        height: 32px;
+        padding: 16px;
+    }
+    .navb {
+        position: absolute;
+        background-color: white;
+    }
+    .navb .multi {
+        display: none;
+    }
+
+    .navb .lg{
+        padding: 0px;
+        width: 100%;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .navb.mobnav .multi{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+/*-----------Conteudo Mobile----------------*/
+
+    .sobre{
+        width: 100%;
+        padding: 0 5%; 
+    }
+
+}
 
