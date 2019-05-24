@@ -21,11 +21,34 @@ html, body { /*Necessário pro background funcionar*/
 
 .stickynav {
     padding: 0;
+    background-color: #cd2e3a;
 }
 
-.topbar {
-    display: block;
-    width: 100%;
+.navb.stickynav a {
+    color: white;
+}
+
+.stickynav .multi li {
+    padding: 10px 10px 10px 20px;
+}
+
+.stickynav .multi #active {
+    color: white;
+    border-bottom: 2px #2e5aea solid;
+
+}
+
+.stickynav #logo {
+    background-image: url(../logo-branco.png);
+    background-size: cover;
+    width:105px;
+    height: 42px;
+}
+
+.stickynav .multi a:hover:not(#active) {
+    color: white;
+    border-bottom: 2px white solid;
+    font-weight:bold;
 }
 
 .multi {
@@ -58,21 +81,25 @@ html, body { /*Necessário pro background funcionar*/
     float: left;
     font-family: 'Baloo Bhai', cursive;
     font-size: 40px;
-    padding-left: 40px;
     transition: 0.4s;
 }
 #logo{
-    width:250px;
-    height:auto;
-    margin-top:5px;
-    margin-left:1%;
+    width:210px;
+    height: 73px;
+    margin-left:15%;
     padding-bottom:0;
     float:left;
-    
+    padding-left: 40px;
+    background-image: url(../css/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
 }
-
-.stickylogo {
-    font-size: 22px;
+#logo img{
+    margin-top:7px;
+    width:250px;
+    height:auto;
+    
 }
 
 /*----------------AQUI SÓ VOU POSICIONAR DIRETINHO AS OPÇÕES DA NAVBAR (header)-----------------*/
@@ -90,11 +117,11 @@ html, body { /*Necessário pro background funcionar*/
 
 /*----------IMAGEM DE FUNDO----------*/
 #bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/bg_img.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg_contatos.jpg");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     z-index: -1;
     display: flex;
     flex-direction: row;

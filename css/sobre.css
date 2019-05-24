@@ -21,11 +21,34 @@ html, body { /*Necessário pro background funcionar*/
 
 .stickynav {
     padding: 0;
+    background-color: #cd2e3a;
 }
 
-.topbar {
-    display: block;
-    width: 100%;
+.navb.stickynav a {
+    color: white;
+}
+
+.stickynav .multi li {
+    padding: 10px 10px 10px 20px;
+}
+
+.stickynav .multi #active {
+    color: white;
+    border-bottom: 2px #2e5aea solid;
+
+}
+
+.stickynav #logo {
+    background-image: url(../logo-branco.png);
+    background-size: cover;
+    width:105px;
+    height: 42px;
+}
+
+.stickynav .multi a:hover:not(#active) {
+    color: white;
+    border-bottom: 2px white solid;
+    font-weight:bold;
 }
 
 .multi {
@@ -61,13 +84,16 @@ html, body { /*Necessário pro background funcionar*/
     transition: 0.4s;
 }
 #logo{
-    width:250px;
-    height:auto;
-    margin-top:5px;
-    margin-left:1%;
+    width:210px;
+    height: 73px;
+    margin-left:15%;
     padding-bottom:0;
     float:left;
     padding-left: 40px;
+    background-image: url(../css/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
 }
 #logo img{
     margin-top:7px;
@@ -90,27 +116,24 @@ html, body { /*Necessário pro background funcionar*/
 
 /*-------COMEÇO ESTILO RODAPÉ---------*/
 footer{
-    position: relative;
-    bottom: -200px;
-    right: 0;
+    position: static;
     background-color: #5c6370;
     width: 100%;
     height: 140px;
-    margin-top: 20px;
+    margin-top: 7%;
 }
 
 footer .logo{
     font-family: 'Baloo Bhai', cursive;
     font-size: 30px;
     margin-left: 34px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 /*---------------OBS.: AQUI FIZ UMA PEQUENA GAMBIARRA PRA POSICIONAR MAS TÁ DE BOA-------------------*/
 footer #copyright{
-    position: absolute;
     top: 60px;
-    left: 34px;
+    padding-left: 34px;
 }
 
 footer .icon{
@@ -123,15 +146,41 @@ footer .icon{
 }
 /*-------FIM ESTILO RODAPÉ------------*/
 
+/*----------IMAGEM DE FUNDO----------*/
+#bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg_sobre.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------TEXTO SOBRE A IMAGEM DE FUNDO-----------*/ 
+#big-text{
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+    vertical-align: center;
+}
 
 
 /*-------ESTILO BODY--------*/
 .sobre{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: left;
     position: relative;
-    padding-top:10%;
+    padding-top:5%;
     padding-right:10%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -159,7 +208,8 @@ footer .icon{
         padding: 16px;
     }
     .navb {
-        position: absolute;
+        padding: 15px 0;
+        position: static;
         background-color: white;
     }
     .navb .multi {
@@ -183,11 +233,19 @@ footer .icon{
         width: 100%;
     }
 
+/*-----------Background Mobile--------------*/
+    #big-text{
+        letter-spacing: default;
+        word-spacing: default;
+        width: 95%;
+        font-size: 24px;
+    }
+
 /*-----------Conteudo Mobile----------------*/
 
     .sobre{
-        width: 100%;
-        padding: 0 5%; 
+        width: 95%;
+        padding: 0;
     }
 
 }
