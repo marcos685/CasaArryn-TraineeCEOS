@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   var nav = document.getElementById("navbar");
   var logo = document.getElementById("logo");
-  var mediaQuery = window.matchMedia('(max-width: 1080px)')
+  var mediaQuery = window.matchMedia('(max-width: 720px)')
 
   if (!mediaQuery.matches){
     if (window.pageYOffset > 80) {
@@ -15,6 +15,9 @@ function scrollFunction() {
         nav.className = "navb";
         logo.className = "lg";
     }
+  } else {
+    nav.className = "navb";
+    logo.className = "lg";
   }
 }
 

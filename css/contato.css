@@ -39,7 +39,7 @@ html, body { /*Necessário pro background funcionar*/
 }
 
 .stickynav #logo {
-    background-image: url(../logo-branco.png);
+    background-image: url(../img/logo-branco.png);
     background-size: cover;
     width:105px;
     height: 42px;
@@ -90,7 +90,7 @@ html, body { /*Necessário pro background funcionar*/
     padding-bottom:0;
     float:left;
     padding-left: 40px;
-    background-image: url(../css/logo.png);
+    background-image: url(../img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center
@@ -116,27 +116,25 @@ html, body { /*Necessário pro background funcionar*/
 
 /*-------COMEÇO ESTILO RODAPÉ---------*/
 footer{
-    position: relative;
-    bottom: -200px;
-    right: 0;
-    background-color: #5c6370;
+    position: static;
+    background-color: #2e5aea;
     width: 100%;
     height: 140px;
-    margin-top: 20px;
+    margin-top: 7%;
+    color: white;
 }
 
 footer .logo{
     font-family: 'Baloo Bhai', cursive;
     font-size: 30px;
     margin-left: 34px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 /*---------------OBS.: AQUI FIZ UMA PEQUENA GAMBIARRA PRA POSICIONAR MAS TÁ DE BOA-------------------*/
 footer #copyright{
-    position: absolute;
     top: 60px;
-    left: 34px;
+    padding-left: 34px;
 }
 
 footer .icon{
@@ -219,6 +217,7 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: #1E90FF;
+  
 }
 #titulo{
     font-family: 'Montserrat', sans-serif;
@@ -239,3 +238,50 @@ input[type=submit]:hover {
     height:auto;
 }
 /*------FIM ESTILO BODY-------*/
+
+@media screen and (max-width: 720px){
+    .navb .icon{
+        position: absolute;
+        display: block;
+        float: left;
+        width: 32px;
+        height: 32px;
+        padding: 16px;
+    }
+    .navb {
+        padding: 15px 0;
+        position: static;
+        background-color: white;
+    }
+    .navb .multi {
+        display: none;
+    }
+
+    .navb .lg{
+        padding: 0px;
+        width: 100%;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .navb.mobnav .multi{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    #formulario {
+        width: 80%
+    }
+
+    #texto {
+        width: 90%;
+        padding: 5%;
+        margin: 0;
+    }
+
+}
